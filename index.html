@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <section id="lesson">
+    <h1 id="Move"><span class="red">E</span><span class="blue"> A</span><span class="green"> S</span><span
+        class="orange"> Y</span></h1>
+    
+      <div class="sub">
+      <input type="text" id="movieName" placeholder="Movie Name" required>
+      <button id="addMovieButton">Add <i class="fa-solid fa-circle-plus"></i></button>
+    </div>
+   <div class="info">
+    <p class="moviesAdded">Movie List <span class="moviesAddedNumber" >0</span></p>
+    <p class="concluding">conclusion <span class="concludingText">0 out of 100</span></p>
+
+   </div>
+    <ul id="movieList">
+      
+    </ul>
+
+
+  </section>
+
+     <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Update Movie</h2>
+      <input type="text" id="editMovieName" placeholder="Movie Name">
+      <button id="saveEditButton">Save</button>
+    </div>
+  </div>
+
+
+  <div id="deleteModal" class="modal">
+    <div class="modal-content">
+      <h2>Are you sure you want to delete?</h2>
+      <button id="confirmDeleteButton">Yes</button>
+      <button id="cancelDeleteButton">No</button>
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+
+</html>
